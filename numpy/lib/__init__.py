@@ -38,6 +38,7 @@ from . import _version
 
 # numpy.lib namespace members
 from ._arrayterator_impl import Arrayterator
+from .image_array import image_array
 from ._version import NumpyVersion
 from numpy._core._multiarray_umath import add_docstring, tracemalloc_domain
 from numpy._core.function_base import add_newdoc
@@ -45,7 +46,7 @@ from numpy._core.function_base import add_newdoc
 __all__ = [
     "Arrayterator", "add_docstring", "add_newdoc", "array_utils",
     "introspect", "mixins", "NumpyVersion", "npyio", "scimath",
-    "stride_tricks", "tracemalloc_domain"
+    "stride_tricks", "tracemalloc_domain", "image_array"
 ]
 
 from numpy._pytesttester import PytestTester
